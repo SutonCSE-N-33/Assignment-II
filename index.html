@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-II</title>
+    <style>
+        .btn-1{
+            color:white;
+            background: blue;
+            padding:10px;
+            border: 1px solid blue;
+            border-radius: 100px;
+            cursor:pointer;
+        }
+        .btn-1:hover{
+            color: white;
+            background: black;
+        }
+        .table{
+               border-collapse: collapse;              
+               border-color: crimson;
+               padding-left: 10px;
+           }
+           .table tr td{
+               border:1px solid crimson;
+               padding:5px;
+           }
+           .table thead tr{
+               background-color: white;
+               color:crimson;
+               padding: 10px;
+               font-size: 22px;
+               font-weight: 500;
+           }
+           .table thead tr td:hover{
+               background-color: crimson;
+               color:white;
+           }
+           .table tbody tr{
+            background-color: black;
+               color:white;
+               padding: 10px;
+           }
+           .table tbody tr td:hover{
+                 background-color: white;
+                 color: black;
+           }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"><span style="color:crimson">R</span>egistration <span style="color:crimson">F</span>orm</h1>
+    <div style="background: white;display: flex;justify-content: center; margin-top: 50px;">
+        <form action="" style="border: 1px solid white;box-shadow: 0 0 3px 0 black; width: 500px; padding: 10px;">
+            <label for="">Full Name: </label>
+            <input type="text" placeholder="Enter Your fullname" required><br ><br>
+            <label for="">Email: </label>
+            <input type="email" placeholder="Enter your Email" required><br><br>
+            <label for="">Password: </label>
+            <input type="password" placeholder="Enter Your Password" required><br><br>
+            <label for="">Worker: </label>
+            <input type="number" min="5" max="10" placeholder="Enter your Salary" required><br><br>
+            <label for="">Phone: </label>
+            <input type="tell" placeholder="Enter your Phone Number" required><br><br>
+            <label for="">Fixed Yor Time: </label>
+            <input type="time"><br><br>
+            <label for="">Date of Birth: </label>
+            <input type="date" placeholder="Enter Your date" required><br><br>
+            <label for="">File </label>
+            <input type="file" required><br><br>
+            <label for="">Image </label>
+            <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" />
+            <div style="display: flex;">
+                <div style="margin-left: 15px;">
+                    <label for="">Gender:</label><br><br>
+                    Male: <input type="radio" name="gender" value="male"><br><br>
+                    Female: <input type="radio" name="gender" value="female"><br><br>
+                    Other: <input type="radio" name="gender" value="male"><br><br>
+                </div>
+                <div style="margin-left: 15px;">
+                    <label for="">Skills: </label><br><br>
+                    HTML: <input type="checkbox" name="skills" value="html"><br><br>
+                    CSS: <input type="checkbox" name="skills" value="css"><br><br>
+                    jS: <input type="checkbox" name="skills" value="js"><br><br>
+                </div>
+                <div style="margin-left: 15px;">
+                    <label for="">Sports: </label><br><br>
+                    <select name="sports" id="">
+                        <option value="cricket">Cricket</option>
+                        <option value="Football">Football</option>
+                        <option value="Hocky">Hocky</option>
+                    </select>
+                </div>
+            </div>
+            <input class="btn-1" type="Submit" value="Submit">
+            <button class="btn-1" type="submit">This is a Button</button>
+        </form>
+    </div>
+
+
+    <section style="margin-top: 50px;">
+        <h1 style="text-align: center;font-size: 35px;font-weight: 700;"><span style="color:crimson">T</span>able <span style="color:crimson">1</span></h1>
+        <div style="display: flex;justify-content: center;">
+            <table border="1" class="table">
+                <thead>
+                    <tr>
+                        <td>1st Column</td>
+                        <td>2nd Column</td>
+                        <td>3rd Column</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1st Row 1st Cell</td>
+                        <td>1st Row 2nd Cell</td>
+                        <td>1st Row 3rd Cell</td>
+                    </tr>
+                    <tr>
+                        <td>2nd Row 2nd Cell</td>
+                        <td>2nd Row 3rd Cell</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">3rd Row 1st Cell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </section>
+
+
+   <section style="margin-top: 50px;">
+    <h1 style="text-align: center;font-size: 35px;font-weight: 700;"><span style="color:crimson">T</span>able <span style="color:crimson">2</span></h1>
+    <div  style="display: flex;justify-content: center;margin-top: 30px;">
+        
+        <table border="1" class="table">
+            <thead>
+              <tr>
+                  <td>No</td>
+                  <td>Competition</td>
+                  <td>Name</td>
+                  <td>Details 1</td>
+                  <td>Details 2</td>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5">1</td>
+                    <td rowspan="5">Swimming</td>
+                    <td>John</td>
+                    <td rowspan="3">This info is<br> relevant to john,<br>Streven and Mark</td>
+                    <td rowspan="2">This info is<br> relevant to john<br>and Streven</td>
+                </tr>
+                <tr>
+                    
+                    <td >Streven</td>
+                    
+                    
+                </tr>
+                <tr>
+                    
+                    
+                    <td>Mark</td>
+                    
+                    <td rowspan="2">This info is<br> relevant to Mark<br>and Peter</td>
+                </tr>
+                <tr>
+                   
+                    
+                    <td >Peter</td>
+                    <td >The info is only<br> relevant to Peter</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   </section>
+</body>
+</html>
